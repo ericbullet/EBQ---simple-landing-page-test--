@@ -1,0 +1,202 @@
+/******* LANDING PAGE STYLES *******/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+h1, h2, h3, h4 {
+    font-family: Seravek, 'Noto Sans KR', 'Novel Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.3vw;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8vw;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header, .hero {
+    background: #EBF4FF;
+}
+
+header {
+    min-height: 150px;
+    margin: 0 auto;
+    padding: 15px 40px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.hero {
+    margin: 0 auto;
+    padding: 5px 15% 60px;
+}
+
+.hero h3 {
+    font-weight: 300;
+    max-width: 80%;
+}
+
+button {
+    border-radius: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 18px;
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin-top: 20px;
+}
+
+button.ebq-blue {
+    background: #2979f2;
+    color: white;
+    border-color: transparent;
+    float: right;
+}
+
+.content {
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 15px 10%;
+}
+
+.left-column {
+    padding: 10px 15px 25px 15px;    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-column {
+    padding: 10px 15px 50px 15px;  
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section {
+    display: none;
+}
+
+section.visible {
+    display: block;
+    margin-top: 20px;
+}
+
+button.toggle {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #2879EC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #1c54a5;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+footer {
+    background: #0A459E;
+    color: white;
+    min-height: 150px;
+    margin: 0 auto;
+    padding: 15px 10%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p{
+        font-size: 1.2vw;
+    }
+    .left-column {
+        width: 35%;
+        margin: 5%;
+        padding: 15px;
+    }
+    .right-column {
+        width: 35%;
+        margin: 5% 0 5% 5%;
+        padding: 15px 0 15px 15px;
+    }
+    header {
+        justify-content: space-between;
+    }
+    button {
+        font-size: 1.5vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

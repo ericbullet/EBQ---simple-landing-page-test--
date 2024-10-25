@@ -1,2 +1,1 @@
-# EBQ - simple-landing-page-test  
- 
+# Simple-landing-page 
